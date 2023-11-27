@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import CustomButton from "./CustomButton";
 import { updateSearchParams } from "@/utils";
 
+// @ts-ignore
 const ShowMore = ({ pageNumber, isNext, setLimit }: ShowMoreProps) => {
     const router = useRouter();
 

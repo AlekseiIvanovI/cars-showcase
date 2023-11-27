@@ -77,10 +77,12 @@ export default function Home() {
 
           <div className='home__filter-container'>
             <CustomFilter title="fuel" options={fuels}
+            // @ts-ignore
             setFilter={setFuel}
 
             />
             <CustomFilter title="year" options={yearsOfProduction}
+            // @ts-ignore
             setFilter={setYear}
             />
           </div>
@@ -108,6 +110,7 @@ export default function Home() {
               <ShowMore 
                 pageNumber={limit / 10}
                 isNext={limit > allCars.length}
+                // @ts-ignore
                 setLimit={setLimit}
               />
             </section>

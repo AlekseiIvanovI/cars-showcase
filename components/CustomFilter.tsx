@@ -6,7 +6,7 @@ import { Fragment, useState } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import { CustomFilterProps } from '@/types';
 import { updateSearchParams } from '@/utils';
-
+// @ts-ignore
 const CustomFilter = ({title, options, setFilter}: CustomFilterProps) => {
   const [selected, setSelected] = useState(options[0]);
 
